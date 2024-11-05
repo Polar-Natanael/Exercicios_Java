@@ -6,6 +6,7 @@ public class Println
 	public static void main (String[] args){
 		System.out.print("Esse é o print ");
 		System.out.println("Esse é um exercício para relembrar como dar um println");
+		System.out.println("Olá\nestou tentando voltar a estudar\ndeseje-me boa sorte!");
 	}
 	
 }
