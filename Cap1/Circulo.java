@@ -1,4 +1,4 @@
-//Diametro, Circuferencia  e  círculo
+//Diametro, Circuferencia  e  área
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class Circulo {
 		System.out.println("");
 		System.out.printf("A circuferencia é %f", (2* 3.14159)*r);
 		System.out.println("");
-		System.out.printf("A area é %f", (3.14159 * r * r));
+		System.out.printf("A área é %f", (3.14159 * r * r));
 		
 	}
 }
