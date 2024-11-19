@@ -15,14 +15,24 @@ public class AccountTest
 	System.out.printf("Primeiro nome: %s%n%n", myAccount.getName());
 	
 	//Solicita e lê o nome
-	
+		
 	System.out.println("Por favor digite seu nome ");
 	String theName = input.nextLine();//lê uma linha de texto
 	myAccount.setName(theName);// insere theName em myAccount
 	System.out.println();
 	
 	//Exibe o nome armazenado no ojeto myAccount
-	System.out.printf("Nome no objeto myAccount: %n%s%n",
-	myAccount.getName());
+	//System.out.printf("Nome no objeto myAccount: %n%s%n",
+	//myAccount.getName());
+	System.out.println();
+	
+	Account minhaConta = new Account();
+	System.out.println("Por favor digite seu nome ");
+	  theName = input.nextLine();
+	minhaConta.setName(theName);
+	
+	System.out.printf("Temos dois objetos criados, onde armazenamos nomes %n O primeiro é o myAccount: %s %n O segundo é minhaConta: %s ",
+	myAccount.getName(), minhaConta.getName());
+	
 	}
 }
