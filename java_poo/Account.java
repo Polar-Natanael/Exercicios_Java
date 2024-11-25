@@ -4,6 +4,9 @@ public class Account
 {
 	private String name;//variavel de instância
 	
+	public Account(String name){
+		this.name = name;
+	}
 	//método para definir  o nome no objeto 
 	public void setName(String name)
 	{
