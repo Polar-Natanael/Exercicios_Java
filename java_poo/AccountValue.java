@@ -2,13 +2,13 @@
 //Classe Account com uma variavel de instancia de balaço do tipo double e um construtor 
 //Método deposit que executa a validação
 
-public class AccountV
+public class AccountValue
 {
 	private String name;//Variável de instância
 	private double balance;//Variável de instância
 	
 	//Construtor de AccountV que recebe dois parâmetros 
-	public AccountV(String name, double balance)
+	public AccountValue(String name, double balance)
 	{
 		this.name = name;
 		
@@ -30,7 +30,6 @@ public class AccountV
 		
 		return balance;
 	}
-	
 	
 	public void setName(String name){
 		this.name = name;
