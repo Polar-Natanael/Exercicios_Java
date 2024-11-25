@@ -4,6 +4,12 @@ public class Account
 {
 	private String name;//variavel de instância
 	
+	//O construtor inicilaliza name com nome do pârametro
+	public Account(String name)// o nome do construtor é  o nome da classe
+	{
+		this.name= name
+	}
+	
 	//método para definir  o nome no objeto 
 	public void setName(String name)
 	{
