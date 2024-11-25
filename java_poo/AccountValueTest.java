@@ -8,8 +8,8 @@ public class AccountValueTest
 		//Cria um Scanner para obter entrada a partir da janela de comando
 		Scanner input = new Scanner(System.in);
 		
-		AccountValue account1 = new AccountValue("Natanael Santos ", 50.00);
-		AccountValue account2 = new AccountValue("Riquinho rico", -7.53);
+		AccountValue account1 = new AccountValue("Natanael Santos", 50.00);
+		AccountValue account2 = new AccountValue("Riquinho Rico", -7.53);
 		
 		//Exibe o saldo inicial
 		System.out.printf("%s possui %.2f $ de saldo %n",
