@@ -53,5 +53,4 @@ public class Fatura
 	public double getPrecoItem(){
 		return precoItem;
 	}
-	
 } 
