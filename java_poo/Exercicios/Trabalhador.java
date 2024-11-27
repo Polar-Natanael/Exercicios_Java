@@ -12,8 +12,16 @@ public class Trabalhador
 		this.sobrenome = sobrenome;
 		
 		if(salario> 0.0)
-		this.salario = salario;
-	}	
+			this.salario = salario;
+	}
+
+	public double salarioAnual()
+	{
+		return salario*12;
+	}
+	public double aumento10(){
+		return salario = salario + salario/100;
+	}
 	
 	public void setName(String name){
 		this.name = name;
@@ -33,5 +41,9 @@ public class Trabalhador
 	{
 		if(salario > 0.0)
 			this.salario = salario;
+	}
+	public double getSalario()
+	{
+		return salario;
 	}
 }
