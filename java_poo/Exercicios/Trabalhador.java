@@ -19,8 +19,8 @@ public class Trabalhador
 	{
 		return salario*12;
 	}
-	public double aumento10(){
-		return salario = salario + salario/100;
+	public double aumento(double porcentagem){
+		return salario = salario + salario/porcentagem;
 	}
 	
 	public void setName(String name){
