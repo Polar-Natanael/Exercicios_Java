@@ -5,11 +5,14 @@ public class AccountTest3_15 {
 	
 	public static void main(String[] args)
 	{	
+		java.util.Scanner input = new java.util.Scanner (System.in);
+		
 		AccountValue test1 = new AccountValue("Natanael Santos", 50.49);
 		AccountValue test2 = new AccountValue("Erick Roberto", -90.80);
 		
 		displayAccount(test1);
 		displayAccount(test2);
+		System.out.println();
 		
 		System.out.print("Quanto deseja depositar a account1: ");
 		double depositAmount = input.nextDouble();
@@ -18,6 +21,7 @@ public class AccountTest3_15 {
 		
 		displayAccount(test1);
 		displayAccount(test2);
+		System.out.println();
 		
 		System.out.print("Quanto deseja depositar a account2: ");
 		depositAmount = input.nextDouble();
@@ -26,6 +30,7 @@ public class AccountTest3_15 {
 		
 		displayAccount(test1);
 		displayAccount(test2);
+		System.out.println();
 		
 	}
 	public static void displayAccount(AccountValue accountToDisplay)
