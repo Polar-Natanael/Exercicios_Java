@@ -30,6 +30,5 @@ public class DataTest
 		Data test2 = new Data(dia, mes, ano);
 		test2.dataDisplay();
 		
-		
 	}
 }
