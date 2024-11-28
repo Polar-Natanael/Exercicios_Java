@@ -12,8 +12,7 @@ public class DataTest
 		test1.dataDisplay();
 		System.out.println();
 		
-		java.util.Scanner input = new Scanner(System.in);
-		
+		java.util.Scanner input = new java.util.Scanner(System.in);
 		
 		
 		System.out.println("Olá vamos \"guarda\" esse momento por favor me informe:");
@@ -25,11 +24,11 @@ public class DataTest
 		mes = input.nextInt();
 	
 		System.out.print("Em que ano estamos");
-		ano = input.nestInt();
+		ano = input.nextInt();
 		System.out.println();
 		
-		Data test2 = new Data(dia, mes, ano),
-		test1.dataDisplay();
+		Data test2 = new Data(dia, mes, ano);
+		test2.dataDisplay();
 		
 		
 	}
