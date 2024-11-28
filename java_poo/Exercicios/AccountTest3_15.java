@@ -3,19 +3,37 @@
 
 public class AccountTest3_15 {
 	
-	public static void main(String args)
+	public static void main(String[] args)
+	{	
+		AccountValue test1 = new AccountValue("Natanael Santos", 50.49);
+		AccountValue test2 = new AccountValue("Erick Roberto", -90.80);
+		
+		displayAccount(test1);
+		displayAccount(test2);
+		
+		System.out.print("Quanto deseja depositar a account1: ");
+		double depositAmount = input.nextDouble();
+		System.out.printf("Foram adicionados %.2f ao saldo da account1%n%n ", depositAmount);
+		test1.deposit(depositAmount);
+		
+		displayAccount(test1);
+		displayAccount(test2);
+		
+		System.out.print("Quanto deseja depositar a account2: ");
+		depositAmount = input.nextDouble();
+		System.out.printf("Foram adicionados %.2f ao saldo da account2%n%n ", depositAmount);
+		test2.deposit(depositAmount);
+		
+		displayAccount(test1);
+		displayAccount(test2);
+		
+	}
+	public static void displayAccount(AccountValue accountToDisplay)
 	{
 		java.util.Scanner input = new java.util.Scanner (System.in);
-		
-		Account test1 = new Account("Natanael Santos", 50.49);
-		Account test2 = new Account("Erick Roberto", -90.80);
-		
 		//Exibe o saldo inicial
 		System.out.printf("%s possui %.2f $ de saldo %n",
-		test1.getName(), test1.getBalance());
-		System.out.printf("%s possui %.2f $ de saldo %n",
-		test2.getName(), test2.getBalance());
-		
+		accountToDisplay.getName(), accountToDisplay.getBalance());	
 	}
 	
 }
