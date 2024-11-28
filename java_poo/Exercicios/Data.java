@@ -8,10 +8,10 @@ public class Data
 	
 	public Data(int dia, int mes,int ano)// Vou supor por enquanto que os valores colocados são validos
 	{
-		if(dia > 0 || dia < 31)
+		if(dia > 0 && dia < 31)
 			this.dia= dia;
 		
-		if(mes > 0 & mes <= 12)
+		if(mes > 0 && mes <= 12)
 			this.mes = mes;
 		
 		if(ano > 0)
@@ -25,7 +25,7 @@ public class Data
 	}
 	
 	public void setDia(int dia){
-		if(dia > 0 || dia < 31)
+		if(dia > 0 && dia < 31)
 			this.dia= dia;
 	}
 	public int getDia()
@@ -34,7 +34,7 @@ public class Data
 	}
 	
 	public void setMes(int mes){
-		if(dia > 0 || dia < 31)
+		if(dia > 0 && dia < 31)
 			this.dia= dia;
 	}
 	public int getMes(){
