@@ -18,7 +18,7 @@ public class Data
 			this.ano = ano;
 	}
 	
-	public void DataDiplay()
+	public void dataDisplay()
 	{
 		System.out.printf("Segundo os dados disponiveis temos que a data correspondente a instancia é : %d/%d/%d%n%n",
 		dia, mes, ano);
