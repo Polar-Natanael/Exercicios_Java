@@ -9,7 +9,7 @@ public class Data
 	public Data(int dia, int mes,int ano)// Vou supor por enquanto que os valores colocados são validos
 	{
 		if(dia > 0 || dia < 31)
-			this. dia= dia;
+			this.dia= dia;
 		
 		if(mes > 0 & mes <= 12)
 			this.mes = mes;
@@ -18,9 +18,15 @@ public class Data
 			this.ano = ano;
 	}
 	
+	public void DataDiplay()
+	{
+		System.out.printf("Segundo os dados disponiveis temos que a data correspondente a instancia é : %d/%d/%d ");
+	}
+	
 	public void setDia(int dia){
 		if(dia > 0 || dia < 31)
-			this. dia= dia;
+			this.dia= dia;
+	}
 	public int getDia()
 	{
 		return dia;
@@ -28,17 +34,17 @@ public class Data
 	
 	public void setMes(int mes){
 		if(dia > 0 || dia < 31)
-			this. dia= dia;
+			this.dia= dia;
 	}
 	public int getMes(){
 		return mes;
 	}
 	public void setAno(int ano){
-		
+		if(ano > 0)
+			this.ano = ano;
 	}
 	public int getAno()
 	{
-		if(ano > 0)
-			this.ano = ano;
+		return ano;
 	}
 }
