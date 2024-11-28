@@ -20,7 +20,8 @@ public class Data
 	
 	public void DataDiplay()
 	{
-		System.out.printf("Segundo os dados disponiveis temos que a data correspondente a instancia é : %d/%d/%d ");
+		System.out.printf("Segundo os dados disponiveis temos que a data correspondente a instancia é : %d/%d/%d%n%n",
+		dia, mes, ano);
 	}
 	
 	public void setDia(int dia){
