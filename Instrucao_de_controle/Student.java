@@ -1,4 +1,4 @@
-//
+//Classe Student que armazena o nome e a média de um aluno. 
 
 public class Student{
 
